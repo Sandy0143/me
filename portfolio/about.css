@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: sans-serif;
+}
+.main{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to right,#405de6,#5851db,#833ab4,#c13584,#e1306c,#fd1d1d);
+    overflow: hidden;
+}
+.main::before{
+    content: '';
+    height: 350px;
+    width: 350px;
+    background-color: aqua;
+    position: absolute;
+    margin-top: 90px;
+    margin-left: 95px;
+    rotate: 45deg;
+}
+.nav{
+    height: 7%;
+    width: 95%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px auto;
+    padding: 20px;
+    text-shadow: 7px 0px 4px rgba(0, 0, 0, 0.7);
+}
+.nav .logo{
+    font-size: 75px;
+    color: #000000;
+    transform: translate(85px,220px);
+    height: max-content;
+    width: 250px;
+    border-radius: 15px;
+}
+#s{
+    font-size:125px;
+    color: rgb(230, 10, 142);
+    text-decoration: line-through;
+}
+h1{
+    font-size: 100px;
+    position:absolute;
+    transform: translate(565px,0px);
+}
+.box{
+    height: 70vh;
+    width: 75%;
+    background: rgba(255, 255, 255, 0.1);
+    z-index: 10;
+    border: 2px solid white;
+    border-radius: 15px;
+    display: flex;
+    position: relative;
+    backdrop-filter: blur(25px);
+    box-shadow: -15px 17px 17px rgba(10, 10, 10, 0.25);
+    overflow: hidden;
+    transform: translate(420px,75px);
+}
+#about{
+    z-index: 12;
+    font-style: italic;
+    transform: translate(450px,90px);
+    font-size: 50px;
+    text-shadow: 5px 0px 4px rgba(0, 0, 0, 0.5);
+}    
+#list{
+    font-size: 40px;
+    transform: translate(55px,90px);
+    font-weight: 600;
+    color:rgba(255, 255, 251, 0.788);
+    font-style: oblique;
+    text-shadow: 4px 0px 4px rgba(0, 0, 0, 0.7);
+    list-style:circle;
+}
+.navb{
+    height: 65px;
+    width: 420px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translate(-600px,330px);
+    border-radius: 15px;
+    justify-content: space-between;
+    font-size: 45px;
+}
+.navb i{
+    transform: translate(25px,10px);
+    margin-right: 39px;
+    justify-content: center;
+    color: black;
+    text-shadow: 6px 0px 4px rgba(0, 0, 0, 0.7);
+    font-weight: 300;
+}
